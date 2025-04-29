@@ -1,0 +1,74 @@
+Algorithm: Analyze a Sentence Character by Character
+Objective:
+
+Count the number of characters, words, and vowels in a sentence that ends with a dot ..
+
+Use three variables as counters.
+
+Variables
+CharacterCount = 0 (to count the number of characters)
+
+WordCount = 0 (to count the number of words)
+
+VowelCount = 0 (to count the number of vowels)
+
+Steps
+Initialize the three counters:
+
+Set CharacterCount = 0
+
+Set WordCount = 0
+
+Set VowelCount = 0
+
+Start reading the sentence, one character at a time.
+
+For each character read:
+
+Increment CharacterCount by 1.
+
+If the character is a vowel ('a', 'e', 'i', 'o', 'u' or their uppercase versions 'A', 'E', 'I', 'O', 'U'):
+
+Increment VowelCount by 1.
+
+If the character is a space (' '):
+
+Increment WordCount by 1.
+
+Continue reading until the character is a dot ('.').
+
+When the dot is reached:
+
+The sentence is considered finished.
+
+Since the last word will not be followed by a space, increment WordCount by 1 (because the last word was not counted after the last space).
+
+Display or store the values of:
+
+CharacterCount
+
+WordCount
+
+VowelCount
+
+Example
+Sentence:
+
+nginx
+Copier
+Modifier
+Hello world.
+Characters = 12 (H, e, l, l, o, , w, o, r, l, d, .)
+
+Words = 2 (Hello, world)
+
+Vowels = 3 (e, o, o)
+
+Result:
+
+ini
+Copier
+Modifier
+CharacterCount = 12
+WordCount = 2
+VowelCount = 3
